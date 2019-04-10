@@ -66,11 +66,6 @@ public class CustomLogin {
         });
     }
 
-    public void addNumbers(Context context, int a, int b){
-        Toast.makeText(context, "Sum = "+(a+b), Toast.LENGTH_SHORT).show();
-    }
-
-
     public void SetOnLoginResponseListener(OnLoginResponse onLoginResponse){
         this.mOnLoginResponse = onLoginResponse;
     }
