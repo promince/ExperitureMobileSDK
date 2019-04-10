@@ -1,5 +1,8 @@
 package com.experiture.mobilesdk;
 
+import android.content.Context;
+import android.widget.Toast;
+
 import com.experiture.mobilesdk.interfaces.APIClient;
 import com.experiture.mobilesdk.interfaces.APIInterface;
 import com.experiture.mobilesdk.modals.ResponseLogin;
@@ -62,6 +65,11 @@ public class CustomLogin {
             }
         });
     }
+
+    public void addNumbers(Context context, int a, int b){
+        Toast.makeText(context, "Sum = "+(a+b), Toast.LENGTH_SHORT).show();
+    }
+
 
     public void SetOnLoginResponseListener(OnLoginResponse onLoginResponse){
         this.mOnLoginResponse = onLoginResponse;
